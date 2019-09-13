@@ -1,0 +1,12 @@
+<!-- <label for="grantsGenerados">{{contenido.tituloContenido}}</label> -->
+
+<div class="alert alert-warning" role="alert" for="grantsGenerados">{{contenido.tituloContenido}}</div>
+
+<textarea style="background-color: rgba(201, 229, 252, 0.925)" rows="7" class="form-control" id="grantsGenerados" value="{{contenido.contenido}}" disabled>
+</textarea>
+          
+<!-- <button class="badge btnSubmit" (click)="copiarAlPortapapeles()">
+  Copiar
+</button> -->
+
+<button type="button" mat-stroked-button class="mt-4 mb-4" (click)="copiarAlPortapapeles()">Copiar</button>

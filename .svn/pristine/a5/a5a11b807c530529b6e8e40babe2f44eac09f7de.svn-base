@@ -1,0 +1,21 @@
+.contenedor-formulario{
+    width:70%;
+}
+
+.resultado{
+  width:50%;
+  float:right;
+  margin-left:10px;
+}
+
+#grantsGenerados{
+    margin-bottom:10px;
+}
+
+.mat-radio-group {
+  margin: 20px 0 20px 0;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}

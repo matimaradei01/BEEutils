@@ -1,0 +1,15 @@
+.badge-light{
+    border: 0.5px solid #673ab7;
+    color: #673ab7;
+    background-color: #ffffff;
+    font-size: 12px;
+
+}
+.contador{
+    font-size: 12px;
+}
+
+.mat-stroked-button {
+    width: 150px;
+    justify-content: center;
+}

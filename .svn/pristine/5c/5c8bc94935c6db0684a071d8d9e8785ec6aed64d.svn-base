@@ -1,0 +1,15 @@
+<h1 class="display-8">Seguimiento de trackers</h1>
+
+<div>
+<div class="contenedorformulario">
+  <form class="search" (ngSubmit)="buscarProyecto()">
+    <div class="search__wrapper form-group">
+      <input type="text" placeholder="Buscar..." class="search__field">
+      <button type="submit" class="fa fa-search search__icon"></button>
+    </div>
+  </form>
+</div>
+</div>
+
+  
+

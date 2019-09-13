@@ -1,0 +1,23 @@
+.contenedor{
+    margin-top: 15vh;
+}
+
+.sector {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    left: 15vw;
+}
+
+.sector-utils {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.intro-home {
+    width: 40vw;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}

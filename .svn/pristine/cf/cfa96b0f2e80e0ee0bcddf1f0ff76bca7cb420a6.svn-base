@@ -1,0 +1,4 @@
+.mat-stroked-button {
+    width: 150px;
+    justify-content: center;
+}

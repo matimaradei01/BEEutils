@@ -1,0 +1,109 @@
+<div class="header">
+  <h1 mat-dialog-title style="text-align: center"> Claves Generadas </h1>
+  <hr style="margin-top: 0px">
+</div>
+<mat-dialog-content>
+    <mat-tab-group mat-align-tabs="center" (selectedTabChange)="tabSeleccionado($event)">
+        <mat-tab label="Unique">
+          
+          
+            <table mat-table [dataSource]="dataSource"  *ngIf="dataSource.data.length > 0 ; else alert" class="mat-elevation-z8">
+
+                <!-- Checkbox Column -->
+                <ng-container matColumnDef="select">
+                  <th mat-header-cell *matHeaderCellDef>
+                    <mat-checkbox color="primary" (change)="$event ? masterToggle() : null"
+                                  [checked]="selection.hasValue() && isAllSelected()"
+                                  [indeterminate]="selection.hasValue() && !isAllSelected()"
+                                  [aria-label]="checkboxLabel()">
+                    </mat-checkbox>
+                  </th>
+                  <td mat-cell *matCellDef="let row">
+                    <mat-checkbox color="primary" (click)="$event.stopPropagation()"
+                                  (change)="$event ? selection.toggle(row) : null"
+                                  [checked]="selection.isSelected(row)"
+                                  [aria-label]="checkboxLabel(row)">
+                    </mat-checkbox>
+                  </td>
+                </ng-container>
+              
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef>N°.</th>
+                  <td mat-cell *matCellDef="let element">{{element.position}}</td>
+                </ng-container>
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="campos">
+                  <th mat-header-cell *matHeaderCellDef>Campo/s</th>
+                  <td mat-cell *matCellDef="let element">{{element.campos}}</td>
+                </ng-container>
+                              
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsUnique; sticky: true"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumnsUnique;"
+                    (click)="selection.toggle(row)">
+                </tr>
+              </table>
+
+          
+        </mat-tab>
+        <mat-tab label="Foreign Key">
+            
+            <table mat-table [dataSource]="dataSource" *ngIf="dataSource.data.length > 0 ; else alert" class="mat-elevation-z8">
+
+                <!-- Checkbox Column -->
+                <ng-container matColumnDef="select">
+                  <th mat-header-cell *matHeaderCellDef>
+                    <mat-checkbox color="primary" (change)="$event ? masterToggle() : null"
+                                  [checked]="selection.hasValue() && isAllSelected()"
+                                  [indeterminate]="selection.hasValue() && !isAllSelected()"
+                                  [aria-label]="checkboxLabel()">
+                    </mat-checkbox>
+                  </th>
+                  <td mat-cell *matCellDef="let row">
+                    <mat-checkbox color="primary" (click)="$event.stopPropagation()"
+                                  (change)="$event ? selection.toggle(row) : null"
+                                  [checked]="selection.isSelected(row)"
+                                  [aria-label]="checkboxLabel(row)">
+                    </mat-checkbox>
+                  </td>
+                </ng-container>
+              
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef>N°.</th>
+                  <td mat-cell *matCellDef="let element">{{element.position}}</td>
+                </ng-container>
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="campo">
+                  <th mat-header-cell *matHeaderCellDef>Campo</th>
+                  <td mat-cell *matCellDef="let element">{{element.campo}}</td>
+                </ng-container>
+              
+                <!-- Weight Column -->
+                <ng-container matColumnDef="tablaDestino">
+                  <th mat-header-cell *matHeaderCellDef>Tabla destino</th>
+                  <td mat-cell *matCellDef="let element">{{element.tablaDestino}}</td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsFk; sticky: true"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumnsFk;"
+                    (click)="selection.toggle(row)">
+                </tr>
+              </table>
+          
+        </mat-tab>
+      </mat-tab-group>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: space-around">
+  <button type="button" mat-stroked-button class="d-flex mb-4" (click)="borrarClave()">Borrar</button>
+  <button type="button" mat-dialog-close mat-stroked-button class="d-flex mb-4" (click)="retornarConstraint()" >Cerrar</button>
+</mat-dialog-actions>
+
+<ng-template #alert>
+<div class="alert alert-danger m-5 animated pulse" role="alert">
+    Sin constraint generadas
+</div>
+</ng-template>

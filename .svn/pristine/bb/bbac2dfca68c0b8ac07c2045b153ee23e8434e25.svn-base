@@ -1,0 +1,14 @@
+ul{
+    margin-top: 20px;
+}
+li{
+    text-align: center;
+}
+table{
+    width: 50vw;
+}
+
+.modal{
+    overflow: hidden;
+}
+

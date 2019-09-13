@@ -1,0 +1,39 @@
+nav{
+    background-color: #eff1f0;
+}
+
+li{
+ display: inline-block;
+}
+
+li a{
+ display: inline-block;
+ text-decoration: none;
+ font-weight: lighter;
+ font-size: 20px;
+ padding: 0 20px;
+}
+
+.nav-link::after{
+ content: "";
+ display: block;
+ width: 0;
+ height: 2px;
+ background: rgb(3, 3, 3);
+ transition: width .3s;
+}
+
+.nav-link:hover::after{
+ width: 100%;
+ transition: width .3s;
+}
+
+.sector {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 600;
+}
+
+.sector-utils {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 400;
+}
