@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {Tabla} from "../../../modelos/bbdd/tabla";
 import {FormControl, FormGroup, Validators, FormArray} from '@angular/forms';
 import {GeneradorCreateService} from '../../../services/bbdd/generador-create/generador-create.service';
@@ -17,8 +17,6 @@ import { ModalClavesGeneradasComponent } from '../../modal-claves-generadas/moda
   encapsulation: ViewEncapsulation.None
 })
 export class GeneradorCreateComponent implements OnInit {
-
-  condicion:boolean = false;
 
   esquemas:string[] = ["USR_BEE", "USR_BEE_LOG", "USR_LINK"];
 
@@ -87,7 +85,9 @@ export class GeneradorCreateComponent implements OnInit {
     private _generadorCreateService:GeneradorCreateService, 
     private _router: Router, 
     private activatedRoute: ActivatedRoute, 
-    private dialog: MatDialog) {}
+    private dialog: MatDialog) {
+    
+  }
 
   ngOnInit() {
     this.cambiarTiposDeDatosPorMotor();
@@ -116,14 +116,8 @@ export class GeneradorCreateComponent implements OnInit {
     this.campos.push(
       this.nuevoCampo()
     );
-    this.generarDominioAutomatico(this.campos.length-1); 
-
-    setTimeout(function(){ 
-      window.scrollTo({
-        top : 1e10,
-        behavior : 'smooth'
-      })
-    }, 100);
+    this.generarDominioAutomatico(this.campos.length-1);
+    
   }
 
   quitarCampo(index){
@@ -133,18 +127,10 @@ export class GeneradorCreateComponent implements OnInit {
 
   cambiarTiposDeDatosPorMotor(){
     if(this.motor.value == "Oracle"){
-      
-      this.scriptForm.controls["comentario"].setValidators(Validators.required);
-      this.scriptForm.controls["comentario"].updateValueAndValidity();
       this.tiposDeDatos = ["NUMBER", "LONG", "VARCHAR2", "CHAR", "CLOB", "DATE", "TIMESTAMP"];
-
     }else{
-      
-      this.scriptForm.controls["comentario"].clearValidators();
-      this.scriptForm.controls["comentario"].updateValueAndValidity();
       this.tiposDeDatos = ["varchar","numeric","int", "bit", "decimal", "money", "float", "date", "datetime", "char", "text"];
-      this.resetearValoresDeTiposDeDatos();      
-      
+      this.resetearValoresDeTiposDeDatos();
     }
   }
 
@@ -268,12 +254,6 @@ export class GeneradorCreateComponent implements OnInit {
         );
     } 
   }
+
  
-  irAlInicoDeLaPagina(){    
-        setTimeout(() => {
-          window.scrollTo(0 , 0);
-        },100);
-      }
 }
-
-

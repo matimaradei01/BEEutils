@@ -269,11 +269,8 @@ export class GeneradorCreateComponent implements OnInit {
     } 
   }
  
-  irAlInicoDeLaPagina(){    
-        setTimeout(() => {
-          window.scrollTo(0 , 0);
-        },100);
-      }
+  
+ 
 }
 
 
