@@ -25,8 +25,7 @@ import { MenuComponent } from "../shared/componentes/menu/menu.component";
     MatInputModule,
     MatTableModule,
     MatCheckboxModule,
-    MatBadgeModule,
-    
+    MatBadgeModule
   ],
   exports: [
     MatButtonModule,

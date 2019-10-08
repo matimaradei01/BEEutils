@@ -22,7 +22,7 @@ export class GeneradorCreateComponent implements OnInit {
 
   esquemas:string[] = ["USR_BEE", "USR_BEE_LOG", "USR_LINK"];
 
-  bases: string[] = ["b2b", "b2b_transf_mult", "afip_seti", "informacion_por_canales", "refresh_online"];
+  bases: string[] = ["b2b", "b2b_transf_mult", "afip_seti", "informacionporcanales", "refresh_online"];
 
   tiposDeDatos:string[] = [];
 
@@ -269,11 +269,8 @@ export class GeneradorCreateComponent implements OnInit {
     } 
   }
  
-  irAlInicoDeLaPagina(){    
-        setTimeout(() => {
-          window.scrollTo(0 , 0);
-        },100);
-      }
+  
+ 
 }
 
 
