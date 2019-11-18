@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calendario</title>
+</head>
+<body>
+    <header class="flex between">
+            <div class="flex left middle wrap">
+                <div class="flex middle center brand">
+                    <img src="img/Logoacademia.png">
+                </div>
+                <nav class="flex center wrap">
+                    <ul>
+                        <li><a class="cool-link" href="index.html">Inicio</a></li>
+                        <li><a class="cool-link" href="contacto.html">Contacto</a></li>
+                        <li><a class="cool-link" href="Personalizacion.html">Personalizacion</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+                    <div class="flex middle right buscador">
+                    <input type="text" name="cursos" class="search-box" placeholder="Busque su curso aqui..."
+                        list="cursos">
+                    <datalist id="cursos">
+                        <option value="Curso de javascript"></option>
+                        <option value="Curso de angular"></option>
+                        <option value="Curso de ruby"></option>
+                    </datalist>
+                </div> 
+            <div class="flex middle cart-logo">
+                <img src="img/carrito.png">
+                <span id="cart-counter" class="cart-counter">0</span>
+            </div>
+        </header>
+
+        <main class="calendario">
+                <table class="egt">
+                        <tr>                      
+                          <th>Lunes</th>                      
+                          <th>Martes</th>                      
+                          <th>Miercoles</th>
+                          <th>Jueves</th>   
+                          <th>Viernes</th>                   
+                          <th>Sabado</th>
+                          <th>Domingo</th>
+                        </tr>                      
+                        <tr>
+                            <td><a href="detalleCurso.html">Curso javascript</a></td>
+                            <td></td>              
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>              
+                            <td></td> 
+                            <td></td> 
+                            <td><a href="detalleCurso.html">Curso javascript</a></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>              
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td><a href="detalleCurso.html">Curso javascript</a></td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>              
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                            <td></td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                      </table>
+                    </main>
+         <footer class="footer">
+            <section class="flex row wrap between footer-container">
+                   <article class="footer-column">
+                       <ul>
+                           <li> Sanchez, Maximiliano </li>
+                           <li> Maradei, Matias</li>
+                           <li> Muñoz, David</li>
+                       </ul>
+                   </article>
+                   <article class="footer-column">
+                       <ul>
+                           <li><a href="index.html">Inicio</a></li>
+                           <li><a href="contacto.html">Contacto</a></li>
+                       </ul>
+                   </article>
+                   <article class="footer-column">
+                       <ul>
+                           <li>Twitter</li>
+                           <li>Facebook</li>
+                       </ul>
+                   </article>
+               </section>
+        </footer>
+</body>
+</html>

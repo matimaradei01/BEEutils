@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripcion</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/inscripcion.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <header class="flex between">
+            <div class="flex left middle wrap">
+                <div class="flex middle center brand">
+                    <img src="img/Logoacademia.png">
+                </div>
+                <nav class="flex center wrap">
+                    <ul>
+                        <li><a class="cool-link" href="index.html">Inicio</a></li>
+                        <li><a class="cool-link" href="contacto.html">Contacto</a></li>
+                        <li><a class="cool-link" href="Personalizacion.html">Personalizacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+                 <div class="flex middle right buscador">
+                    <input type="text" name="cursos" class="search-box" placeholder="Busque su curso aqui..."
+                        list="cursos">
+                    <datalist id="cursos">
+                        <option value="Curso de javascript"></option>
+                        <option value="Curso de angular"></option>
+                        <option value="Curso de ruby"></option>
+                    </datalist>
+                </div> 
+            <div class="flex middle cart-logo">
+                <img src="img/carrito.png">
+                <span id="cart-counter" class="cart-counter">0</span>
+            </div>
+        </header>
+        
+        <main>
+        <div class="contenedor-inscripcion">
+            <div class="inscripcion">
+              <h2 class="titulo-inscripcion">Titulo del Curso</h1>
+               <h3 class="subtitulo-inscripcion">Inscripción</h3>
+               <div id="contenedor">
+               <form id="form">
+                <div class="datos">
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese su nombre" checked>
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese su apellido" checked>
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese numero de documento" checked>
+                <a id="1" onclick="eliminarFilaFormulario(id)"><i class="fas fa-minus-circle"></i></a>
+                </div>
+                <div class="datos">
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese su nombre" checked>
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese su apellido" checked>
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese numero de documento" checked>
+                <a id="2" onclick="eliminarFilaFormulario(id)"><i class="fas fa-minus-circle"></i></a>
+                </div>
+                <div class="datos">
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese su nombre" checked>
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese su apellido" checked>
+                    <input class="inscripcion-input" type="text" placeholder="Ingrese numero de documento" checked>
+                    <a id="3" onclick="eliminarFilaFormulario(id)"><i class="fas fa-minus-circle"></i></a>
+                </div>
+            </form>
+            </div>
+                <div class="agregar">
+                    <a id="agregarBoton" onclick="agregarFilaFormulario()" ><i class="fas fa-plus-circle"></i>
+                    <p>Agregar inscripción</p></a>
+                    <p id="total" class="total"> 000</p>
+                    <a id="btn-inscribirse" class="finalizar-inscripcion">Inscribirse</a>
+                </div>
+              </div>
+            </div> 
+        
+    </main>
+        
+        <footer>
+         <section class="flex row wrap between footer-container">
+            <article class="footer-column">
+                <ul>
+                    <li> Sanchez, Maximiliano </li>
+                    <li> Maradei, Matias</li>
+                    <li> Muñoz, David</li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>

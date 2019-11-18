@@ -1,8 +1,0 @@
-<label for="grantsGenerados">{{contenido.tituloContenido}}</label>
-          
-<textarea style="background-color: rgb(223, 235, 245)" rows="7" class="form-control" id="grantsGenerados" value="{{contenido.contenido}}" disabled>
-</textarea>
-          
-<button class="badge btnSubmit" (click)="copiarAlPortapapeles()">
-  Copiar
-</button>

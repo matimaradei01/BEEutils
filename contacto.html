@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/contacto.js"></script>
+</head>
+
+<body class="body-contacto">
+    <header class="flex between">
+            <div class="flex left middle wrap">
+                <div class="flex middle center brand">
+                    <img src="img/Logoacademia.png">
+                </div>
+                <nav class="flex center wrap">
+                    <ul>
+                        <li><a class="cool-link" href="index.html">Inicio</a></li>
+                        <li><a class="cool-link" href="contacto.html">Contacto</a></li>
+                        <li><a class="cool-link" href="Personalizacion.html">Personalizacion</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+                    <div class="flex middle right buscador">
+                    <input type="text" name="cursos" class="search-box" placeholder="Busque su curso aqui..."
+                        list="cursos">
+                    <datalist id="cursos">
+                        <option value="Curso de javascript"></option>
+                        <option value="Curso de angular"></option>
+                        <option value="Curso de ruby"></option>
+                    </datalist>
+                </div> 
+            <div class="flex middle cart-logo">
+                <img src="img/carrito.png">
+                <span id="cart-counter" class="cart-counter">0</span>
+            </div>
+        </header>
+    
+    <main>
+        
+        <section class="contacto">
+            <h2>CONTACTO</h2>
+            <!--DATOS DE CONTACTO-->
+            <div class="sectionContacto">
+            <article>
+                <form action="#" id="formulario" name="form" onsubmit="return validarFormulario()">
+                    <!--NOMBRE Y APELLIDO-->
+                    <input type="text" id="id_nombre" name="nom_ap" id="nom_ap" placeholder="Ingrese nombre y apellido" >
+                    <br>
+                    <!--EMAIL-->
+                    <input type="email" id="correo" name="correo" id="nom_ap" placeholder="Ingrese su email" >
+                    <br>
+                    <!--TELEFONO-->
+                    <input type="number" name="tel" id="tel" placeholder="Telefono (opcional)">
+                    <br>
+                    <!--CONSULTA-->
+                    <textarea onkeypress="mostrar()" id="texto"  placeholder="Deje su consulta"></textarea>
+                    <br>
+                    <!--BOTON DE ENVIO-->
+                    <input type="submit" value="Validar">
+                    <p id="erroresParrafo"></p>
+                </form>
+            </article>
+
+            <!--DATOS DE CONTACTO DE LA EMPRESA-->
+            <article>
+                <p>
+                    Direccion:
+                    <br>
+                     Colombia 3484
+                </p>
+                <p>
+                    Telefono:
+                    <br>
+                    4482-5998
+                </p>
+                <p>
+                    Email:
+                    <br>
+                    iteducation@edu.com.ar
+                </p>
+            </article>
+            </div>
+        </section>
+
+        <!--UBICACION-->
+        <hr>
+        <aside>
+            <h2>UBICACION</h2>
+            <!--MAPA-->
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9955782252396!2d-58.576131184685664!3d-34.68006106904869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc636fd10635f%3A0x10785dd7d71c3978!2sColombia%203484%2C%20B1754JHB%20San%20Justo%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1569433305199!5m2!1ses!2sar" allowfullscreen=""></iframe>
+        </aside>
+    </main>
+   <footer>
+        <section class="flex row wrap between footer-container">
+            <article class="footer-column">
+                <ul>
+                    <li> Sanchez, Maximiliano </li>
+                    <li> Maradei, Matias</li>
+                    <li> Muñoz, David</li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="calendario.html">Proximos Cursos</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>                    
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+
+
+</html>

@@ -1,8 +1,0 @@
-<main>
-    <section class="margin animated fadeInLeft" fxFlex fxLayout="row">
-        <div fxLayoutAlign="center start">
-            <h1 class="sector">BEE<span class="sector-utils">Utils</span></h1>
-            <img src="../../../../assets/database-img.png" alt="imagen fondo">
-        </div>
-    </section>
-</main>

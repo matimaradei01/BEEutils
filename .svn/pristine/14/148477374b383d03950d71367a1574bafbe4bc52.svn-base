@@ -1,4 +1,0 @@
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Livvic:400,500,600,700&display=swap" rel="stylesheet">
-
-<app-menu></app-menu>
-<router-outlet></router-outlet>

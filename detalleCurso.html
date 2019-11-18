@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <header class="flex between">
+                <div class="flex left middle wrap">
+                    <div class="flex middle center brand">
+                        <img src="img/Logoacademia.png">
+                    </div>
+                    <nav class="flex center wrap">
+                        <ul>
+                            <li><a class="cool-link" href="index.html">Inicio</a></li>
+                            <li><a class="cool-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                        <div class="flex middle right buscador">
+                        <input type="text" name="cursos" class="search-box" placeholder="Busque su curso aqui..."
+                            list="cursos">
+                        <datalist id="cursos">
+                            <option value="Curso de javascript"></option>
+                            <option value="Curso de angular"></option>
+                            <option value="Curso de ruby"></option>
+                        </datalist>
+                    </div> 
+                <div class="flex middle cart-logo">
+                    <img src="img/carrito.png">
+                    <span id="cart-counter" class="cart-counter">0</span>
+                </div>
+            </header>
+
+            <article class="articleDetalle">
+                 <section class="detalleCurso">
+                      <img src="img/CursoJavascript.png">
+                    <div class="contenedorDetalle">
+                        <h3>TITULO CURSO</h3>
+                        <p>Valor: </p>
+                        <p>TIempo de dedicacion necesario: </p>
+                        <p>Descripcion: </p>
+                        <p>Requisitos Previos: </p>
+                        <a href="" class="course-card-button"> <i class="fa fa-ticket"></i> Inscribirse</a>
+                    </div>
+                    </div>
+                </section>
+                <section class="flex column centerAlign">
+                    <details>
+                    <summary>Section 1</summary>
+                    <main>
+                        <div class="contenedorAccordion">
+                            <div class="parrafoAccordion">
+                              <p>Elemento1</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+                          </div>
+                        <div class="contenedorAccordion">
+                            <div class="parrafoAccordion">
+                              <p>Elemento1</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+                          </div>
+                    </main>
+                    </details>
+
+                    <details>
+                    <summary>Section 2</summary>
+                    <main>
+                        <div class="contenedorAccordion">
+                            <div class="parrafoAccordion">
+                              <p>Elemento2</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+                          </div>
+                        <div class="contenedorAccordion">
+                            <div class="parrafoAccordion">
+                              <p>Elemento2</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+                          </div>                       
+                    </main>
+                    </details>
+                    <details>
+                    <summary>Section 3</summary>
+                    <main>
+                        <div class="contenedorAccordion">
+                            <div class="parrafoAccordion">
+                              <p>Elemento3</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+                          </div>
+                        <div class="contenedorAccordion">
+                            <div class="parrafoAccordion">
+                              <p>Elemento3</p>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+                          </div>
+                    </main>
+                    </details>
+                </section>
+                <section class="articleDocente">
+                    <hr>
+                    <img src="img/images.png" alt="">
+                    <div class="infoDocente">
+                        <h3>NOMBRE Y APELLIDO</h3>
+                        <p>★★★★★</p>
+                        <div class="parrafo">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed aperiam animi minima dolor debitis facilis sit, neque perspiciatis et expedita nisi totam hic atque veniam at deserunt, sunt temporibus.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates temporibus quis nesciunt. Accusantium dolores, ullam quibusdam modi quasi cum. Sequi esse quibusdam ab eveniet, minima deleniti culpa rerum nisi.</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="flex footer">
+                        <article class="course-card">
+                                <img class="course-img" src="img/CursoJavascript.png">
+                                <div class="course-card-container flex row middle between">
+                                    <div class="course-card-date">
+                                        <h2>JUN <span class="course-card-date-number">9</span></h2>
+                                    </div>
+                                    <div class="course-card-content">
+                                        <h3 class="course-card-title">Curso de Javascript</h3>
+                                        <a href="detalleCurso.html"><small class="course-card-subtitle">Ver Detalle</small></a>
+                                        <a href="" class="course-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="course-card">
+                                    <img class="course-img" src="img/CursoJavascript.png">
+                                    <div class="course-card-container flex row middle between">
+                                        <div class="course-card-date">
+                                            <h2>JUN <span class="course-card-date-number">9</span></h2>
+                                        </div>
+                                        <div class="course-card-content">
+                                            <h3 class="course-card-title">Curso de Javascript</h3>
+                                            <a href="detalleCurso.html"><small class="course-card-subtitle">Ver Detalle</small></a>
+                                            <a href="" class="course-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="course-card">
+                                        <img class="course-img" src="img/CursoJavascript.png">
+                                        <div class="course-card-container flex row middle between">
+                                            <div class="course-card-date">
+                                                <h2>JUN <span class="course-card-date-number">9</span></h2>
+                                            </div>
+                                            <div class="course-card-content">
+                                                <h3 class="course-card-title">Curso de Javascript</h3>
+                                                <a href="detalleCurso.html"><small class="course-card-subtitle">Ver Detalle</small></a>
+                                                <a href="" class="course-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="course-card">
+                                            <img class="course-img" src="img/CursoJavascript.png">
+                                            <div class="course-card-container flex row middle between">
+                                                <div class="course-card-date">
+                                                    <h2>JUN <span class="course-card-date-number">9</span></h2>
+                                                </div>
+                                                <div class="course-card-content">
+                                                    <h3 class="course-card-title">Curso de Javascript</h3>
+                                                    <a href="detalleCurso.html"><small class="course-card-subtitle">Ver Detalle</small></a>
+                                                    <a href="" class="course-card-button"> <i class="fa fa-ticket"></i> Comprar</a>
+                                                </div>
+                                            </div>
+                                        </article>
+                </section>
+            </article>
+            <footer class="footer">
+                    <section class="flex row wrap center footer-container">
+                        <article class="footer-column">
+                            <ul>
+                                <li> Sanchez, Maximiliano </li>
+                            </ul>
+                        </article>
+                        <article class="footer-column">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </article>
+                        <article class="footer-column">
+                            <ul>
+                                <li>Twitter</li>
+                                <li>Facebook</li>                    
+                            </ul>
+                        </article>
+                    </section>
+                </footer>
+            </main>
+</body>
+</html>
+
+<script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+</script>

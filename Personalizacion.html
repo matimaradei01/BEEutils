@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalizacion</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="flex between">
+            <div class="flex left middle wrap">
+                <div class="flex middle center brand">
+                    <img src="img/Logoacademia.png">
+                </div>
+                <nav class="flex center wrap">
+                    <ul>
+                        <li><a class="cool-link" href="index.html">Inicio</a></li>
+                        <li><a class="cool-link" href="contacto.html">Contacto</a></li>
+                        <li><a class="cool-link" href="Personalizacion.html">Personalizacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+                 <div class="flex middle right buscador">
+                    <input type="text" name="cursos" class="search-box" placeholder="Busque su curso aqui..."
+                        list="cursos">
+                    <datalist id="cursos">
+                        <option value="Curso de javascript"></option>
+                        <option value="Curso de angular"></option>
+                        <option value="Curso de ruby"></option>
+                    </datalist>
+                </div> 
+            <div class="flex middle cart-logo">
+                <img src="img/carrito.png">
+                <span id="cart-counter" class="cart-counter">0</span>
+            </div>
+        </header>
+        
+        
+        <main>
+           <main class="main">
+       <div class="contenedor-personalizacion">
+           <div class="previa">
+           <img src="img/previa.jpg" class="img-previa">
+           <h2 class="vista-previa">Vista previa</h2>
+           </div>
+       <div class="personalizacion">
+         <h2 class="titulo-personalizacion">Personalizacion de Giftcard</h2>
+          <div class="contenedor-titulo">
+          <label for="titulo"></label>
+          <input type="text" id="titulo" placeholder="Nombre Destinatario">
+           </div>
+           <div class="contenedor-color">
+           <label for="color" class="color-title">Color</label>
+           <input type="color" id="color" class="color-button">
+           </div>
+           <h2 class="titulo-personalizacion">Tamaño fuente</h2>
+           <div class="contenedor-fuente">
+                <div class="opciones">  
+                  <label for="size" class="size-uno">20px</label>
+                  <input class="input-size" type="radio" name="size">
+                </div>
+                <div class="opciones">  
+                  <label for="size" class="size-dos">28px</label>
+                  <input class="input-size" type="radio" name="size">
+                </div>  
+                <div class="opciones"> 
+                  <label for="size" class="size-tres">32px</label>
+                  <input class="input-size" type="radio" name="size">
+                </div>
+                <div class="opciones"> 
+                  <label for="size" class="size-cuatro">48px</label>
+                  <input class="input-size" type="radio" name="size" >
+                </div>
+                <div class="opciones">  
+                  <label for="size" class="size-cinco">60px</label>
+                  <input class="input-size" type="radio" name="size">
+                </div>
+              </div>
+              <div class="contenedor-monto">
+                    <label for="monto" class="monto">Monto $</label>
+                    <input type="number" name="monto" class="monto-bar">
+              
+              </div>
+          <h2 class="titulo-personalizacion">Ubicación</h2>
+          <div class="contenedor-ubicacion">
+          <div class="ubicacion-select">
+          <div class="ubicacion-boton">
+          <label for="ubicacion"><img src="img/izquierda-arriba.jpg" class="img-ubi"></label>
+          <input type="radio" name="ubicacion" class="check-ubi"></div>
+          <div class="ubicacion-boton">
+          <label for=""><img src="img/izquierda-abajo.jpg" class="img-ubi"></label>
+          <input type="radio" name="ubicacion" class="check-ubi"></div>
+          <div class="ubicacion-boton">
+          <label for=""><img src="img/derecha-arriba.jpg" class="img-ubi"></label>
+          <input type="radio" name="ubicacion" class="check-ubi"></div>
+          <div class="ubicacion-boton">
+          <label for=""><img src="img/derecha-abajo.jpg" class="img-ubi"></label>
+          <input type="radio" name="ubicacion"class="check-ubi"></div>
+          </div>
+          </div>
+          <h2 class="titulo-personalizacion">Fondo</h2>
+          <div class="contenedor-fondo">
+          <div class="boton-select">
+          <div class="fondo-boton"><label for="fondo"><img src="img/fondo1.jpg" class="img-fondo"></label>
+          <input type="radio" name="fondo" class="check"></div>
+          
+          <div class="fondo-boton"><label for="fondo"><img src="img/fondo2.jpg" class="img-fondo"></label>
+          <input type="radio" name="fondo" class="check"></div>
+          
+          <div class="fondo-boton"><label for="fondo"><img src="img/fondo3.jpg" class="img-fondo"></label>
+          <input type="radio" name="fondo" class="check"></div>
+          
+          <div class="fondo-boton"><label for="fondo"><img src="img/fondo4.jpg" class="img-fondo"></label>
+          <input type="radio" name="fondo" class="check"></div>
+          <div class="fondo-boton"><label for="fondo"><img src="img/fondo5.jpg" class="img-fondo"></label>
+          <input type="radio" name="fondo" class="check"></div>
+          </div>
+          <input type="button" id="boton" value="Confirmar">
+       </div>
+       </div>
+       </div>
+   </main>
+            
+        </main>
+        
+        
+        <footer>
+         <section class="flex row wrap between footer-container">
+            <article class="footer-column">
+                <ul>
+                    <li> Sanchez, Maximiliano </li>
+                    <li> Maradei, Matias</li>
+                    <li> Muñoz, David</li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+    
+</body>
+</html>
